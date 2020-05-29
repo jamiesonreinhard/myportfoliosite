@@ -1,0 +1,56 @@
+.section-hero {
+    height: 100vh;
+    padding-top: 10rem;
+    position: relative;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    z-index: 1.5;
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+.section-about {
+    height: 100vh;
+    background-color: #292929;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    padding: 12rem 3rem 5rem 3rem;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+
+    &__heading {
+        text-align: center;
+        opacity: .5;
+    }
+
+    &__image {
+        position: absolute;
+        top: 65%;
+        left: 26%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        opacity: 1;
+
+    }
+
+    &__box {
+        margin: 5rem auto 3rem;
+        width: 90%;
+        background-color: rgba(153, 153, 153, 0.2);
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+        border-radius: .5rem;
+        padding: 1rem 2rem;
+
+        &-text {
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+}

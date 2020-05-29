@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+.heading-primary {
+  color: #fff;
+  font-size: 8rem; }
+  .heading-primary__sub {
+    color: #fff;
+    font-size: 6rem; }
+
+.heading-tertiary {
+  color: #fff;
+  font-size: 4rem; }
+
+.section-hero {
+  height: 100vh;
+  padding-top: 10rem;
+  position: relative;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  z-index: 1.5; }
+  .section-hero__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.section-about {
+  height: 100vh;
+  background-color: #292929;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  padding: 12rem 3rem 5rem 3rem;
+  position: relative;
+  z-index: -1;
+  overflow: hidden; }
+  .section-about__heading {
+    text-align: center;
+    opacity: .5; }
+  .section-about__image {
+    position: absolute;
+    top: 65%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 1; }
+  .section-about__box {
+    margin: 5rem auto 3rem;
+    width: 90%;
+    background-color: rgba(153, 153, 153, 0.2);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    border-radius: .5rem;
+    padding: 1rem 2rem; }
+    .section-about__box-text {
+      font-size: 2rem;
+      color: #fff; }
+
+.navigation {
+  position: relative;
+  opacity: 0.9;
+  z-index: 1; }
+
+.navbar {
+  background-color: #999999;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png"); }
+
+.navbar-brand {
+  font-size: 3.5rem;
+  margin-right: 4rem; }
+
+.nav-link {
+  font-size: 2rem; }
+
+.nav-item {
+  margin-right: 2rem; }
+
+.react-icon {
+  position: absolute;
+  top: 30%;
+  left: 10%; }
+
+.js-icon {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 10rem; }
+
+.ruby-icon {
+  position: absolute;
+  right: 18%;
+  bottom: 10%;
+  width: 5rem; }
+
+.html-icon {
+  position: absolute;
+  left: 13%;
+  bottom: 20%; }

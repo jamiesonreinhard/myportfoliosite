@@ -1,2 +1,16 @@
-@import "base/base";
-@import "base/typography";
+.heading-primary {
+
+    color: #fff;
+    font-size: 8rem;
+   
+    &__sub{
+        color: #fff;
+        font-size: 6rem;
+       
+    }
+}
+
+.heading-tertiary {
+    color: #fff;
+    font-size: 4rem;
+}
