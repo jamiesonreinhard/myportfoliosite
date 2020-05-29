@@ -1,0 +1,20 @@
+.btn {
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border: 2px solid $color-white;
+    background-color: transparent;
+    transition: all .2s;
+    backface-visibility: hidden;
+    color: $color-white;
+
+    &:hover{
+        transform: translateY(-.2rem) scale(1.02);
+        color: $color-white;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+}

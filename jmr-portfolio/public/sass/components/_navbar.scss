@@ -12,10 +12,17 @@
 .navbar-brand {
     font-size: 3.5rem;
     margin-right: 4rem;
+    font-weight: bold;
     
 }
 .nav-link {
     font-size: 2rem;
+    transition: all .1s;
+
+    &:hover {
+        color: black;
+        transform: scale(1.05);
+    }
     
 }
 

@@ -1,0 +1,104 @@
+.about-box {
+    margin: 5rem auto 3rem;
+    position: relative;
+    width: 80%;
+    background-color: $color-black;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    backface-visibility: hidden;
+    border-radius: .8rem;
+    padding: 2rem 3rem 6rem 3rem;
+    border: 1px solid #e9ff00;
+    transition: all .2s;
+    text-align: left;
+
+    &:hover {
+        transform: translateY(-.5rem) scale(1.01);
+
+    }
+
+    // &-img__1 {
+    //     position: absolute;
+    //     top: -10rem;
+    //     left: 25rem;
+    //     border-radius: 50%;
+    //     opacity: 1;
+    //     width: 30rem;
+    //     z-index: 100;
+    //     border: 5px solid #e9ff00;
+
+    // }
+    &-img__2 {
+        position: absolute;
+        top: -13rem;
+        left: 27.5rem;
+        border-radius: 50%;
+        opacity: 1;
+        width: 20rem;
+        z-index: 100;
+        border: 5px solid #e9ff00;
+    }
+
+
+    &__text {
+        font-size: 1.75rem;
+        color: $color-white;
+        z-index: 3;
+    }
+}
+
+.experience-box {
+    position: relative;
+    margin: 5rem auto 3rem;
+    width: 80%;
+    background-color: rgba(153, 153, 153, 0.2);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    backface-visibility: hidden;
+    border-radius: .8rem;
+    padding: 2rem 3rem;
+    border: 1px solid #e9ff00;
+    transition: all .2s;
+    text-align: left;
+
+
+    &-icon {
+        width: 7rem;
+        float: left;
+    }
+
+
+    &__text {
+        font-size: 1.75rem;
+        color: $color-white;
+        text-align: left;
+    }
+
+    &__captions {
+        font-size: 1.75rem;
+        color: $color-white;
+        padding-left: 12rem;
+    }
+
+    &-alt {
+        margin: 0 auto 6rem auto;
+        text-align: left;
+        width: 70%;
+        border: none;
+
+        &__list {
+            list-style: none;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 6rem;
+            }
+
+        }
+        &__link {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+
+}

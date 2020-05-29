@@ -1,25 +1,80 @@
-.react-icon {
-    position: absolute;
-    top: 30%;
-    left: 10%;
+.icon {
+    width: 7rem;
+    transition: all .2s;
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
-.js-icon {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 10rem;
+.social-icon {
+    width: 6rem;
+    padding-right: 1rem;
 }
 
-.ruby-icon {
-    position: absolute;
-    right: 18%;
-    bottom: 10%;
-    width: 5rem;
-}
+// .react-icon {
+//     position: absolute;
+//     top: 30%;
+//     left: 27%;
+//     transition: ease;
 
-.html-icon {
-    position: absolute;
-    left: 13%;
-    bottom: 20%;
-}
+    
+// }
+
+// .node-icon {
+//     position: absolute;
+//     top: 20%;
+//     left: 40%;
+//     transition: ease;
+
+//     &:hover{
+//         transform: scale(1.1);
+//     }
+// }
+
+// .css-icon {
+//     position: absolute;
+//     top: 50%;
+//     right: 26%;
+//     transition: ease;
+
+//     &:hover{
+//         transform: scale(1.1);
+//     }
+// }
+
+// .js-icon {
+//     position: absolute;
+//     top: 28%;
+//     right: 30%;
+//     width: 10rem;
+
+//     &:hover{
+//         transform: scale(1.1);
+//     }
+
+// }
+
+// .ruby-icon {
+//     position: absolute;
+//     right: 40%;
+//     bottom: 26%;
+//     width: 5rem;
+
+//     &:hover{
+
+//     }
+// }
+
+// .html-icon {
+//     position: absolute;
+//     left: 33%;
+//     bottom: 28%;
+
+//     &:hover{
+
+//     }
+// }
