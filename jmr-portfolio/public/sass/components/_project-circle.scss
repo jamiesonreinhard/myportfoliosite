@@ -1,0 +1,45 @@
+.project-circle {
+
+    margin: 2rem auto;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    border: 3px solid $color-yellow;
+    border-radius: 50%;
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        transform: scale(1);
+        backface-visibility: hidden;
+    }
+
+    &__caption {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &-text {
+            font-size: 3rem;
+        }
+
+    }
+
+    &:hover &__image {
+        transform: scale(.9);
+        filter: blur(9px) brightness(40%);
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        color: $color-white;
+        font-size: 3rem;
+
+    }
+
+    
+}
