@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Navigation from "./Navigation";
 import About from "./About";
 import Resume from "./Resume";
+import Projects from "./Projects";
 
 function App(){
     return(
@@ -11,6 +12,7 @@ function App(){
             <Hero />
             <About />
             <Resume />
+            <Projects />
         </div>
 
     );

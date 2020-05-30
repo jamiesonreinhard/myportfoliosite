@@ -4,10 +4,11 @@ export default class Resume extends Component {
   render() {
     return (
       <div className="section-resume">
+      <div id="resume"/>
         <div className="section-resume__heading">
-          <h1 className="heading-primary__sub">Resume</h1>
+          <h1 className="heading-primary__huge-1">Resume</h1>
           </div>
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-lg-12 col-md-12">
               <div className="experience-box">
                 <h3 className="heading-tertiary mb-5">
@@ -29,7 +30,7 @@ export default class Resume extends Component {
                 <div className="row mt-5">
                 <div className="col-lg-6 col-md-12">
                     <div className="experience-box-alt">
-                      <h3 className="heading-tertiary mb-5">Professional</h3>
+                      <h4 className="heading-four mb-5">Professional</h4>
                       <hr className="hr-style"/>
                       <ul className="experience-box-alt__list">
     
@@ -59,16 +60,19 @@ export default class Resume extends Component {
                   </div>
                   <div className="col-lg-6 col-md-12">
                     <div className="experience-box-alt">
-                      <h3 className="heading-tertiary mb-5">Education</h3>
+                      <h4 className="heading-four mb-5">Education</h4>
                       <hr className="hr-style"/>
                       <ul className="experience-box-alt__list">
     
                         <li className="experience-box-alt__item">
-                          <img
+                        <a href="https://www.lewagon.com/">
+                        <img
                             src="./images/lewagon.png"
                             className="experience-box-icon"
                           ></img>
                           <p className="experience-box__captions">Le Wagon - Full Stack Web Development Bootcamp</p>
+                        </a>
+                         
                         </li>
                        
                         <li className="experience-box-alt__item">
@@ -76,7 +80,7 @@ export default class Resume extends Component {
                             src="./images/udemy.png"
                             className="experience-box-icon"
                           ></img>
-                          <p className="experience-box__captions">Udemy - 2020 Full Stack Bootcamp | Complete JavaScript Course 2020 | MERN Stack | Learn to Code with Ruby</p>
+                          <p className="experience-box__captions">Udemy -<a href="https://www.udemy.com/share/101qYwAkATdlhVR34=/">2020 Full Stack Bootcamp</a>  | <a href="https://www.udemy.com/share/101WeYAkATdlhVR34=/">Complete JavaScript Course 2020</a> | <a href="https://www.udemy.com/share/1024h8AkATdlhVR34=/">MERN Stack</a> | <a href="https://www.udemy.com/share/101YeyAkATdlhVR34=/">Learn to Code with Ruby</a></p>
                         </li>
                         <li className="experience-box-alt__item">
                           <img
@@ -97,7 +101,11 @@ export default class Resume extends Component {
             </div>
           </div>
             
-        
+          <div className="arrow">
+          <a className="arrow__style"  href="#projects">
+          <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
+          </a>
+        </div>
       </div>
     );
   }

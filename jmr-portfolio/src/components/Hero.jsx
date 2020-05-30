@@ -41,7 +41,7 @@ export default class Hero extends Component {
         </div>
 
         <div className="arrow">
-          <a className="arrow__style" href="#">
+          <a className="arrow__style" href="#about">
           <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
           </a>
         </div>

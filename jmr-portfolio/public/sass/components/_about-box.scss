@@ -1,7 +1,7 @@
 .about-box {
     margin: 5rem auto 3rem;
     position: relative;
-    width: 80%;
+    width: 95%;
     background-color: $color-black;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     backface-visibility: hidden;
@@ -29,18 +29,18 @@
     // }
     &-img__2 {
         position: absolute;
-        top: -13rem;
+        top: -8rem;
         left: 27.5rem;
         border-radius: 50%;
         opacity: 1;
-        width: 20rem;
+        width: 15rem;
         z-index: 100;
         border: 5px solid #e9ff00;
     }
 
 
     &__text {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         color: $color-white;
         z-index: 3;
     }
@@ -50,7 +50,7 @@
     position: relative;
     margin: 5rem auto 3rem;
     width: 80%;
-    background-color: rgba(153, 153, 153, 0.2);
+    background-color:$color-grey;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     backface-visibility: hidden;
     border-radius: .8rem;
@@ -63,6 +63,12 @@
     &-icon {
         width: 7rem;
         float: left;
+        transition: all .05s;
+        backface-visibility: hidden;
+
+        &:hover{
+            transform: scale(1.3);
+        }
     }
 
 
@@ -73,7 +79,7 @@
     }
 
     &__captions {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         color: $color-white;
         padding-left: 12rem;
     }
@@ -89,8 +95,16 @@
         }
 
         &__item {
+            
             &:not(:last-child) {
                 margin-bottom: 6rem;
+            }
+            a {
+                text-decoration: none;
+                color: $color-white;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
         }

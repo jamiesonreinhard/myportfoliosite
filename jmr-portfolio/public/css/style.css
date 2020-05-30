@@ -19,10 +19,22 @@ body {
   .heading-primary__sub {
     color: #fff;
     font-size: 6rem; }
+  .heading-primary__huge {
+    color: #fff;
+    font-size: 36rem; }
+    .heading-primary__huge-1 {
+      font-size: 46rem; }
+    .heading-primary__huge-2 {
+      font-size: 44rem;
+      color: #fff; }
 
 .heading-tertiary {
   color: #fff;
   font-size: 4rem; }
+
+.heading-four {
+  color: #fff;
+  font-size: 3rem; }
 
 .hr-style {
   border: 1px solid #fff;
@@ -58,31 +70,49 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   padding: 12rem 3rem 6rem 3rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2; }
   .section-about__heading {
-    text-align: center;
-    margin-bottom: 5rem;
-    opacity: 1;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .3;
     transition: all .2s; }
-    .section-about__heading:hover {
-      transform: translateY(-0.2rem); }
 
 .section-resume {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 10rem 3rem 6rem 0; }
+  padding: 10rem 3rem 6rem 0;
+  position: relative;
+  z-index: 2.5; }
   .section-resume__heading {
-    text-align: center;
-    opacity: 1;
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
     transition: all .2s;
-    margin-bottom: 5rem; }
-    .section-resume__heading:hover {
-      transform: translateY(-0.2rem); }
+    overflow: hidden; }
+
+.section-projects {
+  height: 100vh;
+  background-color: #292929;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  position: relative;
+  z-index: -1; }
+  .section-projects__heading {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .3;
+    transition: all .2s; }
 
 .navigation {
   position: relative;
   opacity: 0.9;
-  z-index: 1; }
+  z-index: 10; }
 
 .navbar {
   background-color: #999999;
@@ -148,7 +178,7 @@ body {
 .about-box {
   margin: 5rem auto 3rem;
   position: relative;
-  width: 80%;
+  width: 95%;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   backface-visibility: hidden;
@@ -161,15 +191,15 @@ body {
     transform: translateY(-0.5rem) scale(1.01); }
   .about-box-img__2 {
     position: absolute;
-    top: -13rem;
+    top: -8rem;
     left: 27.5rem;
     border-radius: 50%;
     opacity: 1;
-    width: 20rem;
+    width: 15rem;
     z-index: 100;
     border: 5px solid #e9ff00; }
   .about-box__text {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     color: #fff;
     z-index: 3; }
 
@@ -177,7 +207,7 @@ body {
   position: relative;
   margin: 5rem auto 3rem;
   width: 80%;
-  background-color: rgba(153, 153, 153, 0.2);
+  background-color: #292929;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   backface-visibility: hidden;
   border-radius: .8rem;
@@ -187,13 +217,17 @@ body {
   text-align: left; }
   .experience-box-icon {
     width: 7rem;
-    float: left; }
+    float: left;
+    transition: all .05s;
+    backface-visibility: hidden; }
+    .experience-box-icon:hover {
+      transform: scale(1.3); }
   .experience-box__text {
     font-size: 1.75rem;
     color: #fff;
     text-align: left; }
   .experience-box__captions {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: #fff;
     padding-left: 12rem; }
   .experience-box-alt {
@@ -205,6 +239,11 @@ body {
       list-style: none; }
     .experience-box-alt__item:not(:last-child) {
       margin-bottom: 6rem; }
+    .experience-box-alt__item a {
+      text-decoration: none;
+      color: #fff; }
+      .experience-box-alt__item a:hover {
+        text-decoration: underline; }
     .experience-box-alt__link {
       margin: 0 auto;
       text-align: center; }
@@ -224,3 +263,14 @@ body {
   .btn a {
     text-decoration: none;
     color: #fff; }
+
+#about {
+  position: absolute;
+  top: -.6rem; }
+
+#resume {
+  position: absolute;
+  top: -.6rem; }
+
+#projects {
+  position: absolute; }

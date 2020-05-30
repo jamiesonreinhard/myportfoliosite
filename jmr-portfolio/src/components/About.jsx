@@ -4,9 +4,10 @@ export default class About extends Component {
   render() {
     return (
       <div className="section-about">
+      <div id="about"/>
        
        <div className="section-about__heading">
-              <h1 className="heading-primary__sub">I'm a developer.</h1>
+              <h1 className="heading-primary__huge">developer</h1>
             </div>
 
         <div className="row">
@@ -31,6 +32,11 @@ export default class About extends Component {
               </p>
             </div>
           </div>
+        </div>
+        <div className="arrow">
+          <a className="arrow__style" href="#resume">
+          <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
+          </a>
         </div>
       </div>
     );

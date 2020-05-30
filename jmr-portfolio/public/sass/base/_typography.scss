@@ -9,10 +9,25 @@ body {
     font-size: 8rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
-   
+
     &__sub{
         color: #fff;
         font-size: 6rem;
+       
+    }
+   
+    &__huge{
+        color: #fff;
+        font-size: 36rem;
+        &-1{
+            font-size: 46rem;
+            
+        }
+        &-2{
+            font-size: 44rem;
+            color: $color-white;
+            
+        }
        
     }
     
@@ -21,6 +36,11 @@ body {
 .heading-tertiary {
     color: #fff;
     font-size: 4rem;
+}
+
+.heading-four {
+    color: $color-white;
+    font-size: 3rem;
 }
 
 .hr-style {
