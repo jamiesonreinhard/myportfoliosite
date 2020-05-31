@@ -21,6 +21,7 @@ export default class Contact extends Component {
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
+      submitted: false
     });
   };
 
@@ -30,7 +31,7 @@ export default class Contact extends Component {
       submitted: true
     })
 
-    const { fullName, email, message, submitted } = this.state
+    const { fullName, email, message } = this.state
 
     axios({
       method: "POST",
@@ -54,21 +55,30 @@ export default class Contact extends Component {
       fullName: "",
         email: "",
         message: "",
-        submitted: false
+        submitted: true
     })
 }
 
 
 
   render() {
-    const { fullName, submitted } = this.state
-    let submitMessage = <h4 className="heading-four">Thanks for submitting, {fullName}</h4>;
+    const { fullName } = this.state
+    let submitMessage = 
+    <div className="u-center-text">
+      <h4 className="heading-four">Thanks for submitting!</h4>
+      <p className="getback">I'll get back to you shortly.</p>
+    </div>
 
     return (
       
       <div className="section-contact">
+      <div id="contact" />
+      <div className="section-contact__heading">
+          <h1 className="heading-primary__huge-1">Contact</h1>
+          
+        </div>
         <div className="form-box">
-        
+        <h3 className="heading-tertiary mb-5">Contact Me</h3>
        
           <form>
             <div className="form-group">

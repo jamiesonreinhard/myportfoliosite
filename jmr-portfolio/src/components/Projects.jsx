@@ -74,7 +74,11 @@ export default class Projects extends Component {
           </div>
         </div>
         
-         
+        <div className="arrow">
+          <a className="arrow__style"  href="#contact">
+          <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
+          </a>
+        </div>
         
       </div>
     );

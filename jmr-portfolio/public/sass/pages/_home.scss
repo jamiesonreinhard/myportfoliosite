@@ -76,12 +76,12 @@
     background-color: #292929;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     position: relative;
-
+    z-index: 4;
     padding: 10rem;
     text-align: center;
     &__heading {
         position: absolute;
-        top: 8rem;
+        top: 11rem;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: .3;
@@ -96,6 +96,19 @@
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     padding: 10rem;
     position: relative;
+    z-index: 3;
+
+    &__heading {
+            position: absolute;
+            top: 12rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .7;
+            transition: all .2s;
+            overflow: hidden;
+            width: 100%;
+            
+        }
 }
 
 .section-footer {
