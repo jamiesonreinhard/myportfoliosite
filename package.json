@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
-    "client":"npm run start --prefix client",
-    "dev":"concurrently \"npm run server\" \"npm run client\""
+    "client":"npm run start --prefix jmr-portfolio",
+    "dev":"concurrently \"npm run server\" \"npm run jmr-portfolio\""
   },
   "repository": {
     "type": "git",
