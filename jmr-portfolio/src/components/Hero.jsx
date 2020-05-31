@@ -8,8 +8,8 @@ export default class Hero extends Component {
           className="section-hero__img"
           src="./images/piney-cutout.png"
         ></img>
-        <div class="bg-video">
-          <video class="bg-video__content" autoPlay muted loop>
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
             <source src="/videobg/Stars.mp4" type="video/mp4" />
             Your browser is not supported
           </video>

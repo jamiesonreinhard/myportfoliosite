@@ -283,6 +283,10 @@ body {
   .btn:hover {
     transform: translateY(-0.2rem) scale(1.02);
     color: #fff; }
+  .btn-hovergrey:hover {
+    background-color: #999999;
+    color: #292929;
+    border: 2px solid #e9ff00; }
   .btn a {
     text-decoration: none;
     color: #fff; }
@@ -345,11 +349,11 @@ body {
   margin: 5rem auto 3rem;
   position: relative;
   width: 60%;
-  background-color: #000000;
+  background-color: #292929;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   backface-visibility: hidden;
   border-radius: .8rem;
-  padding: 2rem 3rem 6rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   border: 1px solid #e9ff00;
   transition: all .2s;
   text-align: left; }
@@ -357,5 +361,5 @@ body {
     color: #fff;
     font-size: 2rem; }
   .form-box__input {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #292929; }
