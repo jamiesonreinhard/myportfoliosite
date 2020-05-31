@@ -13,6 +13,12 @@
         color: $color-white;
     }
 
+    &-hovergrey:hover{
+        background-color: $color-grey-light;
+        color: $color-grey;
+        border: 2px solid $color-yellow;
+
+    }
     a {
         text-decoration: none;
         color: $color-white;

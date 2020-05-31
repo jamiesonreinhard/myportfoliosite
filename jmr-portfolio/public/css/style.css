@@ -34,12 +34,16 @@ body {
 
 .heading-four {
   color: #fff;
-  font-size: 3rem; }
+  font-size: 5rem; }
 
 .hr-style {
   border: 1px solid #fff;
   width: 100%;
   margin: 1rem auto 4rem auto; }
+
+.getback {
+  color: #fff;
+  font-size: 4rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -109,11 +113,12 @@ body {
   background-color: #292929;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   position: relative;
+  z-index: 4;
   padding: 10rem;
   text-align: center; }
   .section-projects__heading {
     position: absolute;
-    top: 8rem;
+    top: 11rem;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .3;
@@ -125,7 +130,17 @@ body {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   padding: 10rem;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
+  .section-contact__heading {
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+    transition: all .2s;
+    overflow: hidden;
+    width: 100%; }
 
 .section-footer {
   background-color: #999999;
@@ -283,6 +298,10 @@ body {
   .btn:hover {
     transform: translateY(-0.2rem) scale(1.02);
     color: #fff; }
+  .btn-hovergrey:hover {
+    background-color: #999999;
+    color: #292929;
+    border: 2px solid #e9ff00; }
   .btn a {
     text-decoration: none;
     color: #fff; }
@@ -304,6 +323,10 @@ body {
   position: absolute;
   top: -.6rem; }
 
+#contact {
+  position: absolute;
+  top: -.6rem; }
+
 .project-circle {
   margin: 2rem auto;
   width: 30rem;
@@ -312,7 +335,8 @@ body {
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   border: 3px solid #e9ff00;
-  border-radius: 50%; }
+  border-radius: 50%;
+  opacity: .9; }
   .project-circle__image {
     height: 100%;
     width: 100%;
@@ -329,7 +353,8 @@ body {
       font-size: 3rem; }
   .project-circle:hover .project-circle__image {
     transform: scale(0.9);
-    filter: blur(9px) brightness(40%); }
+    filter: blur(9px) brightness(30%);
+    opacity: .95; }
   .project-circle:hover .project-circle__caption {
     opacity: 1;
     color: #fff;
@@ -345,17 +370,18 @@ body {
   margin: 5rem auto 3rem;
   position: relative;
   width: 60%;
-  background-color: #000000;
+  background-color: #292929;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   backface-visibility: hidden;
   border-radius: .8rem;
-  padding: 2rem 3rem 6rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   border: 1px solid #e9ff00;
   transition: all .2s;
-  text-align: left; }
+  text-align: left;
+  opacity: .85; }
   .form-box__label {
     color: #fff;
     font-size: 2rem; }
   .form-box__input {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #292929; }
