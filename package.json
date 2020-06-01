@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
-    "client":"npm run start --prefix jmr-portfolio",
-    "dev":"concurrently \"npm run server\" \"npm run jmr-portfolio\""
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,10 @@
   "homepage": "https://github.com/jamiesonreinhard/myportfoliosite#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "concurrent": "^0.3.2",
     "express": "^4.17.1",
     "nodemailer": "^6.4.8"
   },
-  "devDependencies": {}
-  
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
 }

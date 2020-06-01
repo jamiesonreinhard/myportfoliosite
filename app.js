@@ -6,21 +6,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
-  app.use(express.static('jmr-portfolio/build'));
-
-  // Express serve up index.html file if it doesn't recognize route
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'jmr-portfolio', 'build', 'index.html'));
-  });
-}
+// create a GET route
+app.get('/express_backend', (req, res) => {
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+});
 
 var transport = {
     host: 'smtp.gmail.com',
     auth: {
         user: 'jamieson.reinhard2@gmail.com',
-        pass: 'R3!nhard1'
+        pass: 'H0meboyz!'
     }
 }
 
