@@ -1,15 +1,19 @@
+const path = require('path');
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
+const publicPath = path.join(__dirname, 'client', 'public');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(publicPath));
 
-// create a GET route
-app.get('/express_backend', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicPath, 'index.html'));
 });
+
+
 
 var transport = {
     host: 'smtp.gmail.com',
