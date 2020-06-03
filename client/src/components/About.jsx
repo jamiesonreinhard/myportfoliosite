@@ -25,7 +25,7 @@ export default class About extends Component {
            
             <div className="about-box">
                 {/* <img src="./images/skiing.jpg" className="about-box-img__1"></img> */}
-                <img src="./images/golf.jpg" className="about-box-img__2"></img>
+                <img alt="golf" src="./images/golf.jpg" className="about-box-img__2"></img>
               <h3 className="heading-tertiary mb-5">Lifestyle</h3>
               <p className="about-box__text">
                 Life is all about what you do, why you do it, and who you do it with. We're blessed with a short time to enjoy all that our little universe has to offer, and we have to make the best of it! <br /> <br /> I'm a believer that one key to a good life is to be a creater before you are a consumer. Humans thrive on accomplishment, recognition, and on proving to themselves that they can always go a little bit further. I look forward to using coding as a vehicle to create, and to continue experiencing all the wonders of life through a new lens.  <br /><br /> I personally thrive on skiing, travelling, exercise, and sharing good times with good friends.
@@ -35,7 +35,7 @@ export default class About extends Component {
         </div>
         <div className="arrow">
           <a className="arrow__style" href="#resume">
-          <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
+          <img alt ="arrow" className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
           </a>
         </div>
       </div>

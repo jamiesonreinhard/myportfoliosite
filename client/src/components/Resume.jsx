@@ -36,6 +36,7 @@ export default class Resume extends Component {
     
                         <li className="experience-box-alt__item">
                           <img
+                          alt="marriott"
                             src="./images/marriott.png"
                             className="experience-box-icon"
                           ></img>
@@ -43,6 +44,7 @@ export default class Resume extends Component {
                         </li>
                         <li className="experience-box-alt__item">
                           <img
+                          alt="vail"
                             src="./images/vail.png"
                             className="experience-box-icon"
                           ></img>
@@ -50,6 +52,7 @@ export default class Resume extends Component {
                         </li>
                         <li className="experience-box-alt__item">
                           <img
+                          alt="rhino-consulting"
                             src="./images/circle-cropped.png"
                             className="experience-box-icon"
                           ></img>
@@ -67,6 +70,7 @@ export default class Resume extends Component {
                         <li className="experience-box-alt__item">
                         <a href="https://www.lewagon.com/">
                         <img
+                        alt="lewagon"
                             src="./images/lewagon.png"
                             className="experience-box-icon"
                           ></img>
@@ -77,6 +81,7 @@ export default class Resume extends Component {
                        
                         <li className="experience-box-alt__item">
                           <img
+                          alt="udemy"
                             src="./images/udemy.png"
                             className="experience-box-icon"
                           ></img>
@@ -84,6 +89,7 @@ export default class Resume extends Component {
                         </li>
                         <li className="experience-box-alt__item">
                           <img
+                          alt="CU-Boulder"
                             src="./images/Colorado_Buffaloes_logo.png"
                             className="experience-box-icon"
                           ></img>
@@ -94,7 +100,7 @@ export default class Resume extends Component {
                     </div>
                   </div>
                   
-                  <button className="btn btn-lg" ><a href="https://www.linkedin.com/in/jamiesonreinhard/"><img src="./icons/linkedin.svg" className="social-icon"></img><span className="btn-text">Find me on LinkedIn</span></a></button>
+                  <button className="btn btn-lg" ><a href="https://www.linkedin.com/in/jamiesonreinhard/"><img alt="linkedin" src="./icons/linkedin.svg" className="social-icon"></img><span className="btn-text">Find me on LinkedIn</span></a></button>
                 </div>
                 
               </div>
@@ -103,7 +109,7 @@ export default class Resume extends Component {
             
           <div className="arrow">
           <a className="arrow__style"  href="#projects">
-          <img className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
+          <img alt="arrow" className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
           </a>
         </div>
       </div>

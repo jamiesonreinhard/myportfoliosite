@@ -35,7 +35,7 @@ export default class Contact extends Component {
 
     axios({
       method: "POST",
-      url:"http://localhost:3001/send",
+      url:'/send',
       data: {
         fullName,
         email,
@@ -62,7 +62,7 @@ export default class Contact extends Component {
 
 
   render() {
-    const { fullName } = this.state
+    
     let submitMessage = 
     <div className="u-center-text">
       <h4 className="heading-four">Thanks for submitting!</h4>
