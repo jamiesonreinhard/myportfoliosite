@@ -291,7 +291,7 @@ body {
 
 .experience-box {
   position: relative;
-  margin: 5rem auto 3rem;
+  margin: 0 auto;
   width: 80%;
   background-color: #292929;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -301,6 +301,10 @@ body {
   border: 1px solid #e9ff00;
   transition: all .2s;
   text-align: left; }
+  @media (max-width: 37.5em) {
+    .experience-box {
+      margin: 0 auto 8rem auto;
+      width: 95%; } }
   .experience-box-icon {
     width: 7rem;
     float: left;
@@ -335,7 +339,7 @@ body {
       text-align: center; }
     @media (max-width: 37.5em) {
       .experience-box-alt {
-        margin: 0 auto 8rem auto;
+        margin: 0 0 8rem 0;
         width: 95%; } }
 
 .btn {

@@ -54,7 +54,7 @@
 
 .experience-box {
     position: relative;
-    margin: 5rem auto 3rem;
+    margin: 0 auto;
     width: 80%;
     background-color:$color-grey;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -64,6 +64,11 @@
     border: 1px solid #e9ff00;
     transition: all .2s;
     text-align: left;
+
+    @include respond(phone) {
+        margin: 0 auto 8rem auto;
+        width: 95%;
+    }
 
 
     &-icon {
@@ -120,7 +125,7 @@
         }
 
         @include respond(phone) {
-            margin: 0 auto 8rem auto;
+            margin: 0 0 8rem 0;
             width: 95%;
         }
     }
