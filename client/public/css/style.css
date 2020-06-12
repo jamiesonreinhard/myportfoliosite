@@ -164,7 +164,8 @@ body {
 
 .nav-link {
   font-size: 2rem;
-  transition: all .1s; }
+  transition: all .1s;
+  color: #fff; }
   .nav-link:hover {
     color: black;
     transform: scale(1.05); }

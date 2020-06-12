@@ -15,9 +15,11 @@
     font-weight: bold;
     
 }
+
 .nav-link {
     font-size: 2rem;
     transition: all .1s;
+    color: $color-white;
 
     &:hover {
         color: black;
