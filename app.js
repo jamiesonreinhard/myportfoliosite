@@ -6,19 +6,21 @@ const OAuth2 = google.auth.OAuth2;
 const cors = require("cors");
 const app = express();
 
+require('dotenv').config();
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 const oauth2Client = new OAuth2(
-  "716876038413-2ardv48thf58javdjg6g3frhdeh3p3so.apps.googleusercontent.com", // ClientID
-  "uz2ufJa3y2_XynGYdXtg4hWC", // Client Secret
+  process.env.CLIENT_ID, // ClientID
+  process.env.CLIENT_SECRET, // Client Secret
   "https://developers.google.com/oauthplayground" // Redirect URL
 );
 
 oauth2Client.setCredentials({
-  refresh_token: "1//04hzHyvM5rwdHCgYIARAAGAQSNwF-L9Ir6aQgxgRgCEcESlkfGQw9XNYR7-Ec63Yvi2IIHO1azU5rE7x-lvIn_ZbgKWSk5uYJxX8"
+  refresh_token: process.env.REFRESH_TOKEN
 });
 const accessToken = oauth2Client.getAccessToken()
 
@@ -27,9 +29,9 @@ const smtpTransport = nodemailer.createTransport({
   auth: {
        type: "OAuth2",
        user: "jamieson.reinhard2@gmail.com", 
-       clientId: "716876038413-2ardv48thf58javdjg6g3frhdeh3p3so.apps.googleusercontent.com",
-       clientSecret: "uz2ufJa3y2_XynGYdXtg4hWC",
-       refreshToken: "1//04hzHyvM5rwdHCgYIARAAGAQSNwF-L9Ir6aQgxgRgCEcESlkfGQw9XNYR7-Ec63Yvi2IIHO1azU5rE7x-lvIn_ZbgKWSk5uYJxX8",
+       clientId: process.env.CLIENT_ID,
+       clientSecret: process.env.CLIENT_SECRET,
+       refreshToken: process.env.REFRESH_TOKEN,
        accessToken: accessToken
   }
 });
