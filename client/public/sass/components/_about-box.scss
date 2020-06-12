@@ -35,6 +35,10 @@
         opacity: 1;
         width: 15rem;
         border: 5px solid #e9ff00;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
 
@@ -43,6 +47,9 @@
         color: $color-white;
         z-index: 3;
     }
+
+
+    
 }
 
 .experience-box {
@@ -110,6 +117,11 @@
         &__link {
             margin: 0 auto;
             text-align: center;
+        }
+
+        @include respond(phone) {
+            margin: 0 auto 8rem auto;
+            width: 95%;
         }
     }
 

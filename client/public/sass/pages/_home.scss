@@ -4,6 +4,7 @@
 
 .section-hero {
     height: 100vh;
+    width: 100%;
     padding-top: 10rem;
     position: relative;
     background-color: $color-black;
@@ -28,7 +29,35 @@
         overflow: hidden;
     }
 
+    @include respond(tab-land) {
+        
+        &__img {
+            height: 90rem;
+            
+
+        }
+        
+    }
+
+    @include respond(tab-port) {
+        
+        &__img {
+            height: 40rem;
+            
+
+        }
+        
+    }
+
+    @include respond(phone) {
+        padding: 5rem;
+        
+    }
+    
 }
+
+
+
 
 .section-about {
     background-color: #292929;
@@ -48,6 +77,9 @@
         
     }
 
+    @include respond(phone) {
+        padding: 5rem 1rem;
+    }
     
     }
 
@@ -69,10 +101,15 @@
             width: 100%;
             
         }
+
+        @include respond(phone) {
+            padding: 5rem 1rem;
+        }
     
     }
 
 .section-projects{
+    
     background-color: #292929;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     position: relative;
@@ -88,6 +125,12 @@
         transition: all .2s;
         overflow: hidden;
         width: 100%;
+    }
+
+    @include respond(phone) {
+        margin: 0 auto;
+        padding: 5rem;
+
     }
 }
 
@@ -109,6 +152,12 @@
             width: 100%;
             
         }
+
+        @include respond(phone) {
+            margin: 0 auto;
+            padding: 5rem;
+    
+        }    
 }
 
 .section-footer {

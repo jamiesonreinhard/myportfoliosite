@@ -30,6 +30,18 @@ body {
         }
        
     }
+
+    @include respond(phone) {
+        
+       font-size: 5rem;
+       &__sub {
+        font-size: 3rem;
+       } 
+            
+
+        }
+        
+    
     
 }
 
@@ -41,6 +53,10 @@ body {
 .heading-four {
     color: $color-white;
     font-size: 5rem;
+
+    @include respond(phone) {
+        font-size: 4rem;
+    }
 }
 
 .hr-style {

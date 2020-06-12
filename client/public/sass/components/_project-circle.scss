@@ -43,5 +43,11 @@
 
     }
 
+    @include respond(phone) {
+        width: 25rem;
+        height: 25rem;
+        margin: 2rem auto;
+    }
+
     
 }

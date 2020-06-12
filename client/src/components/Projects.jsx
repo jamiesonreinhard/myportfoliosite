@@ -17,7 +17,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" alt="jamoproject" src="./images/jamo-project.png"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">My Portfolio</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://jmr-portfolio-site.herokuapp.com/"><button className="btn btn-small">View Site >></button></a>
                 </div>
              
             </div>
