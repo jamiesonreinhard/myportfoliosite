@@ -1,4 +1,4 @@
-.appdiv{
+.appdiv {
     z-index: -10;
 }
 
@@ -10,7 +10,7 @@
     background-color: $color-black;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     z-index: 1.5;
-    
+
 
     &__text-box {
         position: absolute;
@@ -30,30 +30,30 @@
     }
 
     @include respond(tab-land) {
-        
+
         &__img {
             height: 90rem;
-            
+
 
         }
-        
+
     }
 
     @include respond(tab-port) {
-        
+
         &__img {
             height: 40rem;
-            
+
 
         }
-        
+
     }
 
     @include respond(phone) {
         padding: 5rem;
-        
+
     }
-    
+
 }
 
 
@@ -74,50 +74,51 @@
         transform: translate(-50%, -50%);
         opacity: .3;
         transition: all .2s;
-        
+
     }
 
     @include respond(phone) {
         padding: 5rem 1rem;
     }
-    
+
+}
+
+.section-resume {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    padding: 10rem 3rem 6rem 0;
+    position: relative;
+    z-index: 5;
+
+
+
+    &__heading {
+        position: absolute;
+        top: 9rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .7;
+        transition: all .2s;
+        overflow: hidden;
+        width: 100%;
+
     }
 
-    .section-resume {
-        background-color: #000000;
-        background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-        padding: 10rem 3rem 6rem 0;
-        position: relative;
-        z-index: 5;
-       
-
-
-        &__heading {
-            position: absolute;
-            top: 9rem;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: .7;
-            transition: all .2s;
-            overflow: hidden;
-            width: 100%;
-            
-        }
-
-        @include respond(phone) {
-            padding: 5rem 1rem;
-        }
-    
+    @include respond(phone) {
+        padding: 5rem 1rem 3rem 1rem;
     }
 
-.section-projects{
-    
+}
+
+.section-projects {
+
     background-color: #292929;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     position: relative;
     z-index: 4;
     padding: 10rem;
     text-align: center;
+
     &__heading {
         position: absolute;
         top: 11rem;
@@ -127,6 +128,7 @@
         transition: all .2s;
         overflow: hidden;
         width: 100%;
+
     }
 
     @include respond(phone) {
@@ -144,22 +146,22 @@
     z-index: 3;
 
     &__heading {
-            position: absolute;
-            top: 12rem;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: .7;
-            transition: all .2s;
-            overflow: hidden;
-            width: 100%;
-            
-        }
+        position: absolute;
+        top: 12rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .7;
+        transition: all .2s;
+        overflow: hidden;
+        width: 100%;
 
-        @include respond(phone) {
-            margin: 0 auto;
-            padding: 5rem;
-    
-        }    
+    }
+
+    @include respond(phone) {
+        margin: 0 auto;
+        padding: 5rem;
+
+    }
 }
 
 .section-footer {
@@ -168,9 +170,3 @@
     padding: 5rem;
     text-align: center;
 }
-
-
-   
-
-
-

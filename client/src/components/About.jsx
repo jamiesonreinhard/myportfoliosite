@@ -10,7 +10,7 @@ export default class About extends Component {
               <h1 className="heading-primary__huge">developer</h1>
             </div>
 
-        <div className="row">
+        <div className="row u-margin-bottom-medium">
           
           <div className="col-lg-6 col-md-12">
          

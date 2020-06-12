@@ -8,7 +8,7 @@ export default class Resume extends Component {
         <div className="section-resume__heading">
           <h1 className="heading-primary__huge-1">Resume</h1>
           </div>
-          <div className="row mb-5">
+          <div className="row u-margin-bottom-big">
             <div className="col-lg-12 col-md-12">
               <div className="experience-box">
                 <h3 className="heading-tertiary mb-5">
