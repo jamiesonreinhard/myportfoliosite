@@ -5,69 +5,63 @@ body {
 
 .heading-primary {
 
-    color: #fff;
+    color: $color-off-white;
     font-size: 8rem;
     letter-spacing: .3rem;
-    text-transform: uppercase;
 
-    &__sub{
-        color: #fff;
-        font-size: 6rem;
-       
+
+    &__sub {
+        color: $color-off-white;
+        font-size: 4rem;
+
     }
-   
-    &__huge{
-        color: #fff;
+
+    &__huge {
+        color: $color-off-white;
         font-size: 36rem;
-        &-1{
+
+        &-1 {
             font-size: 46rem;
-            
-            
+
+
         }
-        &-2{
+
+        &-2 {
             font-size: 44rem;
-            color: $color-white;
-            
-            
+            color: $color-off-white;
+
+
         }
-       
+
     }
 
     @include respond(phone) {
-        
-       font-size: 5rem;
-       &__sub {
-        font-size: 3rem;
-       } 
-            
 
+        font-size: 5rem;
+
+        &__sub {
+            font-size: 3rem;
         }
-        
-    
-    
+
+
+    }
+
+
+
 }
 
 .heading-tertiary {
-    color: #fff;
-    font-size: 4rem;
-}
-
-.heading-four {
-    color: $color-white;
-    font-size: 5rem;
-
-    @include respond(phone) {
-        font-size: 4rem;
-    }
+    color: $color-off-white;
+    font-size: 3.5rem;
 }
 
 .hr-style {
-    border: 1px solid #fff;
+    border: 1px solid $color-off-white;
     width: 100%;
     margin: 1rem auto 4rem auto;
 }
 
 .getback {
-    color: $color-white;
+    color: $color-off-white;
     font-size: 4rem;
 }
