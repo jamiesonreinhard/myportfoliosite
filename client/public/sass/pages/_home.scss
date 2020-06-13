@@ -165,8 +165,11 @@
 }
 
 .section-footer {
+    position: relative;
     background-color: $color-grey-light;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 5rem;
+    height: 7rem;
+    padding: .5rem;
     text-align: center;
+    
 }

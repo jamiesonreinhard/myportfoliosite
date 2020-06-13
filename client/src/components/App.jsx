@@ -7,10 +7,12 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Scroll from "./Scroll";
 
 function App() {
   return (
     <div className="appdiv">
+      <Scroll />
       <Navigation />
       <Hero />
       <About />

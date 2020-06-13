@@ -16,7 +16,7 @@ export default class Hero extends Component {
           </video>
         </div>
         <div className="section-hero__text-box">
-          <h1 className="heading-primary">Hi! I'm Jamieson</h1>
+          <h1 className="heading-primary">Hi, I'm Jamieson</h1>
           <h2 className="heading-primary__sub mb-4">I code in...</h2>
           <img
             alt="js" 
@@ -47,12 +47,12 @@ export default class Hero extends Component {
           className="css-icon icon" src="./icons/icons8-css3-96.png"></img>
         </div>
 
-        <div className="arrow">
+        {/* <div className="arrow">
           <a className="arrow__style" href="#about">
           <img alt="arrow" 
           className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
           </a>
-        </div>
+        </div> */}
       </div>
     );
   }

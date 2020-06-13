@@ -11,7 +11,7 @@ export default class Resume extends Component {
           <div className="row u-margin-bottom-big">
             <div className="col-lg-12 col-md-12">
               <div className="experience-box">
-                <h3 className="heading-tertiary mb-5">
+                <h3 className="heading-primary__sub mb-5">
                   Experience & Education
                 </h3>
                 <p className="about-box__text mb-5">
@@ -30,7 +30,7 @@ export default class Resume extends Component {
                 <div className="row mt-5">
                 <div className="col-lg-6 col-md-12">
                     <div className="experience-box-alt">
-                      <h4 className="heading-four mb-5">Professional</h4>
+                      <h4 className="heading-tertiary mb-5">Professional</h4>
                       <hr className="hr-style"/>
                       <ul className="experience-box-alt__list">
     
@@ -63,7 +63,7 @@ export default class Resume extends Component {
                   </div>
                   <div className="col-lg-6 col-md-12">
                     <div className="experience-box-alt">
-                      <h4 className="heading-four mb-5">Education</h4>
+                      <h4 className="heading-tertiary mb-5">Education</h4>
                       <hr className="hr-style"/>
                       <ul className="experience-box-alt__list">
     
@@ -107,11 +107,13 @@ export default class Resume extends Component {
             </div>
           </div>
             
+{/*             
           <div className="arrow">
           <a className="arrow__style"  href="#projects">
           <img alt="arrow" className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
           </a>
         </div>
+         */}
       </div>
     );
   }

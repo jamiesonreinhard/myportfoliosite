@@ -16,11 +16,12 @@
 .navbar {
     background-color: #999999;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    height: 6rem;
 }
 
 .navbar-brand {
     font-size: 3.5rem;
-    margin-right: 4rem;
+    margin: 0 7rem 0 2rem;
     font-weight: bold;
 
     
@@ -28,7 +29,7 @@
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: all .1s;
     color: $color-white;
 
