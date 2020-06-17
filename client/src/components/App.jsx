@@ -9,6 +9,8 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Scroll from "./Scroll";
 
+
+
 function App() {
   return (
     <div className="appdiv">

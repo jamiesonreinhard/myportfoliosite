@@ -241,23 +241,39 @@ body {
     object-fit: cover;
     overflow: hidden; }
 
-.arrow {
+.scroll-icon {
   position: fixed;
   left: 50%;
   bottom: 2rem;
   transform: translate(-50%, -50%);
-  color: #e9ff00;
-  width: 5rem;
+  color: rgba(240, 230, 230, 0.904);
+  width: 10rem;
   z-index: 1000;
-  transition: all .2s; }
-  .arrow:hover {
-    transform: translate(-50%, -54%);
+  transition: all .2s;
+  animation: fadein 2.5s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .scroll-icon:hover {
+    transform: translate(-50%, -58%) scaleY(1.05);
     opacity: 1; }
-  .arrow:active {
+  .scroll-icon:active {
     transform: translate(-50%, -50%); }
   @media (max-width: 75em) {
-    .arrow {
+    .scroll-icon {
       display: none; } }
+
+.fade-out {
+  animation: fadeout 2.5s; }
+
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 .about-box {
   margin: 5rem auto 3rem;

@@ -1,17 +1,35 @@
-import React, { useRef, Component } from "react";
+import React, {useState} from 'react';
+import {IoIosArrowDown} from 'react-icons/io';
 
-export default class Scroll extends Component {
-  render() {
-    return (
-      <div className="scroll-arrow">
-        <a className="arrow__style">
-          <img
-            className="arrow"
-            src="./icons/icons8-expand-arrow-96.png"
-            alt="arrow"
-          ></img>
-        </a>
-      </div>
-    );
-  }
+
+const ScrollArrow = () =>{
+
+  const [showScroll, setShowScroll] = useState(false)
+
+  const checkScrollNext = () => {
+    if (!showScroll){
+      setTimeout(function() {
+        setShowScroll(true)
+      }, 500); 
+    } 
+  };
+
+  const scrollNext = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    setTimeout(function() {
+      setShowScroll(false);
+      
+    }, 100);
+    
+  };
+
+  window.addEventListener('scroll', checkScrollNext)
+
+  return (
+        <IoIosArrowDown className="scroll-icon" 
+        onClick={scrollNext} 
+        style={{height: 60, display: showScroll ? 'flex' : 'none'}}/>
+  );
 }
+
+export default ScrollArrow;
