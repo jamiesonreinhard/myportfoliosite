@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {IoIosArrowDown} from 'react-icons/io';
+import {IoIosArrowUp} from 'react-icons/io';
 
 
 const ScrollArrow = () =>{
@@ -7,26 +7,30 @@ const ScrollArrow = () =>{
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollNext = () => {
-    if (!showScroll){
-      setTimeout(function() {
+    setTimeout(function() {
+      if (window.pageYOffset > 400){
+      
         setShowScroll(true)
-      }, 500); 
-    } 
+      
+      
+    } else {
+      setShowScroll(false)
+    }
+    }, 1000);
+    
   };
 
   const scrollNext = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
-    setTimeout(function() {
-      setShowScroll(false);
-      
-    }, 100);
+    setShowScroll(false)
+    
     
   };
 
   window.addEventListener('scroll', checkScrollNext)
 
   return (
-        <IoIosArrowDown className="scroll-icon" 
+        <IoIosArrowUp className="scroll-icon" 
         onClick={scrollNext} 
         style={{height: 60, display: showScroll ? 'flex' : 'none'}}/>
   );

@@ -250,7 +250,7 @@ body {
   width: 10rem;
   z-index: 1000;
   transition: all .2s;
-  animation: fadein 2.5s; }
+  animation: fadein 1.5s; }
 
 @keyframes fadein {
   from {

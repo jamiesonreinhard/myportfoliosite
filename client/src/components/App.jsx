@@ -17,11 +17,11 @@ function App() {
       <Scroll />
       <Navigation />
       <Hero />
-      <About />
-      <Resume />
-      <Projects />
-      <Contact />
-      <Footer />
+      <About id="about"/>
+      <Resume id="resume"/>
+      <Projects id="projects"/>
+      <Contact id="contact"/>
+      <Footer id="footer"/>
     </div>
   );
 }
