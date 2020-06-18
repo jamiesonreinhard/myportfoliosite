@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-export default class Hero extends Component {
+
+export default class Home extends Component {
   render() {
     return (
       <div className="section-hero">
