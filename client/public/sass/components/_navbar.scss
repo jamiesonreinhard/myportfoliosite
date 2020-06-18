@@ -13,8 +13,13 @@
     }
 }
 
-.main-nav-active {
-    color: $color-yellow;
+.activeLink {
+    color: black !important;
+
+    &:hover {
+        transform: scale(1) !important;
+    }
+
 }
 
 .navbar {

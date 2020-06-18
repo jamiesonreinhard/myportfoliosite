@@ -191,8 +191,10 @@ body {
       margin: none;
       overflow-x: hidden; } }
 
-.main-nav-active {
-  color: #e9ff00; }
+.activeLink {
+  color: black !important; }
+  .activeLink:hover {
+    transform: scale(1) !important; }
 
 .navbar {
   background-color: #999999;
@@ -261,11 +263,11 @@ body {
   to {
     opacity: .6; } }
   .scroll-icon:hover {
-    transform: translate(-50%, -58%) scaleY(1.05);
-    opacity: .6; }
+    transform: translate(-50%, -58%) scale(1.05);
+    opacity: 1; }
   .scroll-icon:active {
     transform: translate(-50%, -50%);
-    opacity: .6; }
+    opacity: 1; }
   @media (max-width: 75em) {
     .scroll-icon {
       display: none; } }
@@ -275,7 +277,7 @@ body {
 
 @keyframes fadeout {
   from {
-    opacity: .6; }
+    opacity: 1; }
   to {
     opacity: 0; } }
 

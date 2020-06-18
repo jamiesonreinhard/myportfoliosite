@@ -27,7 +27,7 @@ const ScrollArrow = () =>{
     setTimeout(function() {
       document.querySelector('.scroll-icon').classList.remove('fade-out');
       checkScrollNext();
-    }, 2000);
+    }, 1000);
     
     
     
@@ -38,7 +38,7 @@ const ScrollArrow = () =>{
   return (
         <FaArrowCircleUp className="scroll-icon" 
         onClick={scrollNext} 
-        style={{height: 60, display: showScroll ? 'flex' : 'none'}}/>
+        style={{height: 50, display: showScroll ? 'flex' : 'none'}}/>
   );
 }
 
