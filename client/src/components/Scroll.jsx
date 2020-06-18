@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {IoIosArrowUp} from 'react-icons/io';
+import {FaArrowCircleUp} from 'react-icons/fa';
 
 
 const ScrollArrow = () =>{
@@ -7,7 +7,8 @@ const ScrollArrow = () =>{
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollNext = () => {
-    setTimeout(function() {
+    
+    
       if (window.pageYOffset > 400){
       
         setShowScroll(true)
@@ -16,13 +17,18 @@ const ScrollArrow = () =>{
     } else {
       setShowScroll(false)
     }
-    }, 1000);
+  
     
   };
 
   const scrollNext = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
-    setShowScroll(false)
+    document.querySelector('.scroll-icon').classList.add('fade-out');
+    setTimeout(function() {
+      document.querySelector('.scroll-icon').classList.remove('fade-out');
+      checkScrollNext();
+    }, 2000);
+    
     
     
   };
@@ -30,7 +36,7 @@ const ScrollArrow = () =>{
   window.addEventListener('scroll', checkScrollNext)
 
   return (
-        <IoIosArrowUp className="scroll-icon" 
+        <FaArrowCircleUp className="scroll-icon" 
         onClick={scrollNext} 
         style={{height: 60, display: showScroll ? 'flex' : 'none'}}/>
   );

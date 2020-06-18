@@ -191,6 +191,9 @@ body {
       margin: none;
       overflow-x: hidden; } }
 
+.main-nav-active {
+  color: #e9ff00; }
+
 .navbar {
   background-color: #999999;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -203,8 +206,7 @@ body {
 
 .nav-link {
   font-size: 1.8rem;
-  transition: all .1s;
-  color: #fff; }
+  transition: all .1s; }
   .nav-link:hover {
     color: black;
     transform: scale(1.05); }
@@ -244,34 +246,36 @@ body {
 .scroll-icon {
   position: fixed;
   left: 50%;
-  bottom: 2rem;
+  bottom: 1rem;
   transform: translate(-50%, -50%);
   color: rgba(240, 230, 230, 0.904);
-  width: 10rem;
+  width: 6rem;
   z-index: 1000;
   transition: all .2s;
-  animation: fadein 1.5s; }
+  animation: fadein 1.5s;
+  opacity: .6; }
 
 @keyframes fadein {
   from {
     opacity: 0; }
   to {
-    opacity: 1; } }
+    opacity: .6; } }
   .scroll-icon:hover {
     transform: translate(-50%, -58%) scaleY(1.05);
-    opacity: 1; }
+    opacity: .6; }
   .scroll-icon:active {
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: .6; }
   @media (max-width: 75em) {
     .scroll-icon {
       display: none; } }
 
 .fade-out {
-  animation: fadeout 2.5s; }
+  animation: fadeout 2s; }
 
 @keyframes fadeout {
   from {
-    opacity: 1; }
+    opacity: .6; }
   to {
     opacity: 0; } }
 

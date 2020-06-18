@@ -1,6 +1,7 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-import Hero from "./Hero";
+import Home from "./Home";
 import Navigation from "./Navigation";
 import About from "./About";
 import Resume from "./Resume";
@@ -14,14 +15,17 @@ import Scroll from "./Scroll";
 function App() {
   return (
     <div className="appdiv">
+   
       <Scroll />
       <Navigation />
-      <Hero />
-      <About id="about"/>
-      <Resume id="resume"/>
-      <Projects id="projects"/>
-      <Contact id="contact"/>
-      <Footer id="footer"/>
+      <Home />
+      <About />
+      <Resume />
+      <Projects />
+      <Contact />
+      <Footer />
+    
+      
     </div>
   );
 }

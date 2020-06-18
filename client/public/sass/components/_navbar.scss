@@ -13,6 +13,10 @@
     }
 }
 
+.main-nav-active {
+    color: $color-yellow;
+}
+
 .navbar {
     background-color: #999999;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -31,7 +35,6 @@
 .nav-link {
     font-size: 1.8rem;
     transition: all .1s;
-    color: $color-white;
 
     &:hover {
         color: black;
@@ -43,5 +46,4 @@
 .nav-item {
     margin-right: 2rem;
 }
-
 

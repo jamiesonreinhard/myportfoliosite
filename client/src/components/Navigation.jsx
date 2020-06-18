@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 
+
+
+
+
+
 export default class Navigation extends Component {
   render() {
     return (
@@ -22,7 +27,7 @@ export default class Navigation extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item active">
                 <a className="nav-link" href="#home">
                   Home <span className="sr-only">(current)</span>
                 </a>
