@@ -10,12 +10,7 @@ export default class Home extends Component {
           className="section-hero__img"
           src="./images/piney-cutout.png"
         ></img>
-        <div className="bg-video">
-          <video className="bg-video__content" autoPlay muted loop>
-            <source src="/videobg/Stars.mp4" type="video/mp4" />
-            Your browser is not supported
-          </video>
-        </div>
+        
         <div className="section-hero__text-box">
           <h1 className="heading-primary">Hi, I'm Jamieson</h1>
           <h2 className="heading-primary__sub mb-4">I code in...</h2>

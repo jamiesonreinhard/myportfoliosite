@@ -1,16 +1,23 @@
 .form-box {
-    margin: 5rem auto 3rem;
+    margin: 0 auto 3rem;
     position: relative;
-    width: 60%;
-    background-color: $color-grey;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    width: 70%;
+    
     backface-visibility: hidden;
-    border-radius: .8rem;
-    padding: 2rem 3rem 2rem 3rem;
-    border: 1px solid #e9ff00;
+    border-radius: 0;
+    padding: 2rem 3rem 6rem 3rem;
+    
     transition: all .2s;
     text-align: left;
-    opacity: .85;
+    z-index: 20;
+
+    &:hover {
+        transform: translateY(-.5rem) scale(1.005);
+        outline: .2px solid #e9ff00;
+        outline-offset: .2rem;
+        background-color: rgba($color-grey, 0.6);
+
+    }
 
 
     &__label {
@@ -32,3 +39,9 @@
         }
     }
     }
+
+    input[type="text"], textarea[type="text"] {
+
+        background-color : $color-off-white; 
+      
+      }

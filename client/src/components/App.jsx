@@ -9,13 +9,16 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Scroll from "./Scroll";
+import BackgroundVid from "./BackgroundVid";
 
 
 
 function App() {
   return (
     <div className="appdiv">
-   
+
+      
+      <BackgroundVid />
       <Scroll />
       <Navigation />
       <Home />
