@@ -45,10 +45,6 @@ body {
   width: 100%;
   margin: 1rem auto 4rem auto; }
 
-.getback {
-  color: rgba(240, 230, 230, 0.904);
-  font-size: 4rem; }
-
 .u-center-text {
   text-align: center !important; }
 
@@ -116,7 +112,7 @@ body {
 .section-resume {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 0rem 3rem 3rem 0;
+  padding: 0rem 0 3rem 0;
   position: relative;
   z-index: 1.7; }
   .section-resume__heading {
@@ -155,12 +151,12 @@ body {
 .section-contact {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 10rem;
+  padding: 5rem 10rem 5rem 10rem;
   position: relative;
   z-index: 1.9; }
   .section-contact__heading {
     position: absolute;
-    top: -2rem;
+    top: -6rem;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .7;
@@ -337,7 +333,7 @@ body {
     transition: all .05s;
     backface-visibility: hidden; }
     .experience-box-icon:hover {
-      transform: scale(1.3); }
+      transform: scale(1.1); }
   .experience-box__text {
     font-size: 1.75rem;
     color: rgba(240, 230, 230, 0.904);
@@ -373,14 +369,15 @@ body {
   margin: 1rem auto;
   padding: 1rem;
   font-size: 2.5rem;
-  border: 2px solid #fff;
+  border: 2px solid rgba(240, 230, 230, 0.904);
   background-color: transparent;
   transition: all .2s;
   backface-visibility: hidden;
-  color: #fff; }
+  color: rgba(240, 230, 230, 0.904); }
+  .btn-text {
+    color: rgba(240, 230, 230, 0.904); }
   .btn:hover {
-    transform: translateY(-0.2rem) scale(1.02);
-    color: #fff; }
+    transform: translateY(-0.2rem) scale(1.02); }
   .btn-hovergrey:hover {
     background-color: #999999;
     color: #292929;
@@ -408,7 +405,7 @@ body {
 
 #contact {
   position: absolute;
-  top: -.6rem; }
+  top: -6rem; }
 
 .project-circle {
   margin: 2rem auto;
@@ -469,7 +466,7 @@ body {
   width: 70%;
   backface-visibility: hidden;
   border-radius: 0;
-  padding: 2rem 3rem 6rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   transition: all .2s;
   text-align: left;
   z-index: 20; }

@@ -37,7 +37,7 @@ export default class Resume extends Component {
                         <li className="experience-box-alt__item">
                           <img
                           alt="marriott"
-                            src="./images/marriott.png"
+                            src="./images/marriottbetter.png"
                             className="experience-box-icon"
                           ></img>
                           <p className="experience-box__captions">Marriott International - Assistant Director of Finance | 3 years of service</p>
@@ -100,20 +100,15 @@ export default class Resume extends Component {
                     </div>
                   </div>
                   
-                  <button className="btn btn-lg" ><a href="https://www.linkedin.com/in/jamiesonreinhard/"><img alt="linkedin" src="./icons/linkedin.svg" className="social-icon"></img><span className="btn-text">Find me on LinkedIn</span></a></button>
+                  <button className="btn btn-hovergrey" ><a href="https://www.linkedin.com/in/jamiesonreinhard/"><img alt="linkedin" src="./icons/linkedin.svg" className="social-icon"></img><span
+                  className="btn-text">Find me on LinkedIn</span></a></button>
                 </div>
                 
               </div>
             </div>
           </div>
             
-{/*             
-          <div className="arrow">
-          <a className="arrow__style"  href="#projects">
-          <img alt="arrow" className="arrow" src="./icons/icons8-expand-arrow-96.png"></img>
-          </a>
-        </div>
-         */}
+
       </div>
     );
   }

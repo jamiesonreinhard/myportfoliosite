@@ -65,8 +65,8 @@ export default class Contact extends Component {
     
     let submitMessage = 
     <div className="u-center-text">
-      <h4 className="heading-four">Thanks for submitting!</h4>
-      <p className="getback">I'll get back to you shortly.</p>
+      <h4 className="heading-tertiary">Thanks for submitting!</h4>
+      <p className="heading-tertiary">I'll get back to you shortly.</p>
     </div>
 
     return (

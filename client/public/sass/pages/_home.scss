@@ -86,7 +86,7 @@
 .section-resume {
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 0rem 3rem 3rem 0;
+    padding: 0rem 0 3rem 0;
     position: relative;
     z-index: 1.7;
 
@@ -140,13 +140,13 @@
 .section-contact {
     background-color: $color-black;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 10rem;
+    padding: 5rem 10rem 5rem 10rem;
     position: relative;
     z-index: 1.9;
 
     &__heading {
         position: absolute;
-        top: -2rem;
+        top: -6rem;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: .7;
