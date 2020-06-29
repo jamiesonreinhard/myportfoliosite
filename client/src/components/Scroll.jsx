@@ -21,7 +21,7 @@ const ScrollArrow = () =>{
     
   };
 
-  const scrollNext = () =>{
+  const scrollTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
     document.querySelector('.scroll-icon').classList.add('fade-out');
     setTimeout(function() {
@@ -37,7 +37,7 @@ const ScrollArrow = () =>{
 
   return (
         <FaArrowCircleUp className="scroll-icon" 
-        onClick={scrollNext} 
+        onClick={scrollTop} 
         style={{height: 50, display: showScroll ? 'flex' : 'none'}}/>
   );
 }

@@ -133,7 +133,7 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   position: relative;
   z-index: 1.8;
-  padding: 6rem 10rem;
+  padding: 0 10rem 6rem 10rem;
   text-align: center; }
   .section-projects__heading {
     position: absolute;
@@ -401,7 +401,7 @@ body {
 
 #projects {
   position: absolute;
-  top: -.6rem; }
+  top: -5.8rem; }
 
 #contact {
   position: absolute;

@@ -17,7 +17,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" alt="jamoproject" src="./images/jamo-project.png"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">My Portfolio</h4>
-                <a href="https://jmr-portfolio-site.herokuapp.com/"><button className="btn btn-small">View Site >></button></a>
+                <a href="https://jmr-portfolio-site.herokuapp.com/"><button className="btn btn-small btn-hovergrey">View Site >></button></a>
                 </div>
              
             </div>
@@ -27,7 +27,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" src="./images/mindd-unravelled.png" alt="mindunravelled"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">A Mind Unravelled</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
                 </div>
              
             </div>
@@ -37,7 +37,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" src="./images/FFL_site.png" alt="fflsite"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">FFL Social Network</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
                 </div>
              
             </div>
@@ -47,7 +47,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" src="./images/jamo-project.png" alt="jamiesonproject"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">My Portfolio</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
                 </div>
              
             </div>
@@ -57,7 +57,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" src="./images/mindd-unravelled.png" alt="mdunravelled"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">A Mind Unravelled</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
                 </div>
              
             </div>
@@ -67,7 +67,7 @@ export default class Projects extends Component {
                 <img className="project-circle__image" src="./images/FFL_site.png" alt="HHSFantasy"></img>
                 <div className="project-circle__caption">
                 <h4 className="project-circle__caption-text">FFL Social Network</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small">GitHub Pages >></button></a>
+                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
                 </div>
              
             </div>
