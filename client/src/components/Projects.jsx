@@ -1,7 +1,32 @@
 import React, { Component } from "react";
 
 export default class Projects extends Component {
+
+  
+  
   render() {
+
+    var myProjects = {
+      portfolio: {
+        imgName: 'jamo-project',
+        alt: 'jamoproject',
+        url: 'https://jmr-portfolio-site.herokuapp.com/',
+        caption: 'My Portfolio'
+      },
+      mindUnravelled: {
+        imgName: 'mindd-unravelled',
+        alt: 'mindunravelled',
+        url: 'https://jmr-portfolio-site.herokuapp.com/',
+        caption: 'A Mind Unravelled',
+      },
+      hhsFantasy: {
+        imgName: 'FFL_site',
+        alt: 'FFL',
+        url: 'https://jmr-portfolio-site.herokuapp.com/',
+        caption: 'HHS Fantasy'
+      }
+    }
+    
     return (
       <div className="section-projects">
         <div id="projects" />
@@ -10,75 +35,19 @@ export default class Projects extends Component {
           
         </div>
         
-        <div className="row u-margin-bottom-medium">
-        
-          <div className="col-lg-4 col-md-6">
+            <div className="row u-margin-bottom-medium">
+              {Object.keys(myProjects).map(key => {
+                return <div className="col-lg-4 col-md-6">
             <div className="project-circle">
-                <img className="project-circle__image" alt="jamoproject" src="./images/jamo-project.png"></img>
+                <img className="project-circle__image" alt={key.alt} src={'./images/' + key.imgName + '.png'}></img>
                 <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">My Portfolio</h4>
-                <a href="https://jmr-portfolio-site.herokuapp.com/"><button className="btn btn-small btn-hovergrey">View Site >></button></a>
+                <h4 className="project-circle__caption-text">{key.caption}</h4>
+                <a href={key.url}><button className="btn btn-small btn-hovergrey">View Site >></button></a>
                 </div>
-             
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="project-circle">
-                <img className="project-circle__image" src="./images/mindd-unravelled.png" alt="mindunravelled"></img>
-                <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">A Mind Unravelled</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
-                </div>
-             
+              })}
             </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="project-circle">
-                <img className="project-circle__image" src="./images/FFL_site.png" alt="fflsite"></img>
-                <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">FFL Social Network</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
-                </div>
-             
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="project-circle">
-                <img className="project-circle__image" src="./images/jamo-project.png" alt="jamiesonproject"></img>
-                <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">My Portfolio</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
-                </div>
-             
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="project-circle">
-                <img className="project-circle__image" src="./images/mindd-unravelled.png" alt="mdunravelled"></img>
-                <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">A Mind Unravelled</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
-                </div>
-             
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="project-circle">
-                <img className="project-circle__image" src="./images/FFL_site.png" alt="HHSFantasy"></img>
-                <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">FFL Social Network</h4>
-                <a href="https://github.com/jamiesonreinhard"><button className="btn btn-small btn-hovergrey">GitHub Pages >></button></a>
-                </div>
-             
-            </div>
-          </div>
-        </div>
-        
-        {/* <div className="arrow">
-          <a className="arrow__style"  href="#contact">
-          <img className="arrow" src="./icons/icons8-expand-arrow-96.png" alt="arrow"></img>
-          </a>
-        </div> */}
         
       </div>
     );
