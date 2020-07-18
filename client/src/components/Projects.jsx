@@ -37,12 +37,13 @@ export default class Projects extends Component {
         
             <div className="row u-margin-bottom-medium">
               {Object.keys(myProjects).map(key => {
+                const project = myProjects[key]
                 return <div className="col-lg-4 col-md-6">
             <div className="project-circle">
-                <img className="project-circle__image" alt={key.alt} src={'./images/' + key.imgName + '.png'}></img>
+                <img className="project-circle__image" alt={project.alt} src={'./images/' + project.imgName + '.png'}></img>
                 <div className="project-circle__caption">
-                <h4 className="project-circle__caption-text">{key.caption}</h4>
-                <a href={key.url}><button className="btn btn-small btn-hovergrey">View Site >></button></a>
+                <h4 className="project-circle__caption-text">{project.caption}</h4>
+                <a href={project.url}><button className="btn btn-small btn-hovergrey">View Site >></button></a>
                 </div>
             </div>
           </div>
