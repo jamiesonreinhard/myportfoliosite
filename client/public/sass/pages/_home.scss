@@ -1,174 +1,146 @@
 .appdiv {
-    z-index: 1;
+  z-index: 1;
 }
 
 .section-hero {
-    height: 100vh;
-    width: 100%;
-    padding-top: 10rem;
-    position: relative;
-    background-color: $color-black;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    z-index: 1.5;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+  position: relative;
+  background-color: $color-black;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 
+  z-index: 1.5;
 
-    &__text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 20;
-    }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 20;
+  }
 
+  &__img {
+    opacity: 0.35;
+    position: absolute;
+    bottom: 0;
+    left: -2rem;
+    height: 110%;
+    overflow: hidden;
+  }
+
+  @include respond(tab-land) {
     &__img {
-        opacity: 0.35;
-        position: absolute;
-        bottom: 0;
-        left: -2rem;
-        height: 110%;
-        overflow: hidden;
+      height: 90rem;
     }
-
-    @include respond(tab-land) {
-
-        &__img {
-            height: 90rem;
-
-
-        }
-
+  }
+  @include respond(tab-port) {
+    &__img {
+      height: 40rem;
     }
-
-    @include respond(tab-port) {
-
-        &__img {
-            height: 40rem;
-
-
-        }
-
-    }
-
-    @include respond(phone) {
-        padding: 5rem;
-
-    }
-
+  }
+  @include respond(phone) {
+    padding: 5rem;
+  }
 }
 
-
-
-
 .section-about {
-    background-color: $color-black;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 5rem 3rem 3rem 3rem;
-    position: relative;
-    z-index: 1.6;
+  background-color: $color-black;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  padding: 5rem 3rem 1rem 3rem;
+  position: relative;
+  z-index: 1.6;
 
-    &__heading {
-        position: absolute;
-        top: -6rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: .3;
-        transition: all .2s;
+  &__heading {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
 
-    }
-
-    @include respond(phone) {
-        padding: 5rem 1rem;
-    }
-
+  @include respond(phone) {
+    padding: 5rem 1rem;
+  }
 }
 
 .section-resume {
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 0rem 0 3rem 0;
-    position: relative;
-    z-index: 1.7;
+  background-color: #000000;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  padding: 0rem 0 3rem 0;
+  position: relative;
+  z-index: 1.7;
 
+  &__heading {
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: all 0.2s;
+    overflow: hidden;
+    width: 100%;
+  }
 
-
-    &__heading {
-        position: absolute;
-        top: -10rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: .7;
-        transition: all .2s;
-        overflow: hidden;
-        width: 100%;
-
-    }
-
-    @include respond(phone) {
-        padding: 5rem 1rem 3rem 1rem;
-    }
-
+  @include respond(phone) {
+    padding: 5rem 1rem 3rem 1rem;
+  }
 }
 
 .section-projects {
+  background-color: $color-black;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  position: relative;
+  z-index: 1.8;
+  padding: 0 10rem 6rem 10rem;
+  text-align: center;
 
-    background-color: $color-black;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    position: relative;
-    z-index: 1.8;
-    padding: 0 10rem 6rem 10rem;
-    text-align: center;
+  &__heading {
+    position: absolute;
+    top: -2rem;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    transition: all 0.2s;
+    width: 100%;
+  }
 
-    &__heading {
-        position: absolute;
-        top: -2rem;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        opacity: .3;
-        transition: all .2s;
-        width: 100%;
-
-    }
-
-    @include respond(phone) {
-        margin: 0 auto;
-        padding: 5rem;
-
-    }
+  @include respond(phone) {
+    margin: 0 auto;
+    padding: 5rem;
+  }
 }
 
 .section-contact {
-    background-color: $color-black;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    padding: 5rem 10rem 5rem 10rem;
-    position: relative;
-    z-index: 1.9;
+  background-color: $color-black;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  padding: 2rem 10rem 5rem 10rem;
+  position: relative;
+  z-index: 1.9;
 
-    &__heading {
-        position: absolute;
-        top: -6rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: .7;
-        transition: all .2s;
-        overflow: hidden;
-        width: 100%;
-
-    }
-
-    @include respond(phone) {
-        margin: 0 auto;
-        padding: 5rem;
-
-    }
+  &__heading {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: all 0.2s;
+    overflow: hidden;
+    width: 100%;
+  }
+  @include respond(phone) {
+    margin: 0 auto;
+    padding: 5rem;
+  }
 }
 
 .section-footer {
-    position: relative;
-    background-color: $color-grey-light;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    height: 7rem;
-    padding: .5rem;
-    text-align: center;
-    
+  position: relative;
+  background-color: $color-grey-light;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  height: 7rem;
+  padding: 0.5rem;
+  text-align: center;
 }

@@ -1,28 +1,21 @@
 import React, { Component } from "react";
 
-
-const addActive = function() {
-
-  const links = document.getElementsByClassName('nav-link');
-  
+const addActive = function () {
+  const links = document.getElementsByClassName("nav-link");
   for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function() {
+    links[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("activeLink");
       current[0].className = current[0].className.replace(" activeLink", "");
       this.className += " activeLink";
     });
   }
-  
-
-}
-
-
+};
 
 export default class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-      <div id="home"/>
+        <div id="home" />
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand" href="/">
             JMR
@@ -41,7 +34,11 @@ export default class Navigation extends Component {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link activeLink" href="#home" onClick={addActive}>
+                <a
+                  className="nav-link activeLink"
+                  href="#home"
+                  onClick={addActive}
+                >
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>

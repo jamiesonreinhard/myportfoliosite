@@ -66,7 +66,6 @@ body {
   padding-top: 10rem;
   position: relative;
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   z-index: 1.5; }
   .section-hero__text-box {
     position: absolute;
@@ -94,8 +93,7 @@ body {
 
 .section-about {
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 5rem 3rem 3rem 3rem;
+  padding: 5rem 3rem 1rem 3rem;
   position: relative;
   z-index: 1.6; }
   .section-about__heading {
@@ -103,15 +101,14 @@ body {
     top: -6rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: .3;
-    transition: all .2s; }
+    opacity: 0.3;
+    transition: all 0.2s; }
   @media (max-width: 37.5em) {
     .section-about {
       padding: 5rem 1rem; } }
 
 .section-resume {
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   padding: 0rem 0 3rem 0;
   position: relative;
   z-index: 1.7; }
@@ -120,8 +117,8 @@ body {
     top: -10rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: .7;
-    transition: all .2s;
+    opacity: 0.7;
+    transition: all 0.2s;
     overflow: hidden;
     width: 100%; }
   @media (max-width: 37.5em) {
@@ -130,7 +127,6 @@ body {
 
 .section-projects {
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   position: relative;
   z-index: 1.8;
   padding: 0 10rem 6rem 10rem;
@@ -140,8 +136,8 @@ body {
     top: -2rem;
     left: 45%;
     transform: translate(-50%, -50%);
-    opacity: .3;
-    transition: all .2s;
+    opacity: 0.3;
+    transition: all 0.2s;
     width: 100%; }
   @media (max-width: 37.5em) {
     .section-projects {
@@ -150,8 +146,7 @@ body {
 
 .section-contact {
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 2rem 10rem 5rem 10rem;
   position: relative;
   z-index: 1.9; }
   .section-contact__heading {
@@ -159,8 +154,8 @@ body {
     top: -6rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: .7;
-    transition: all .2s;
+    opacity: 0.7;
+    transition: all 0.2s;
     overflow: hidden;
     width: 100%; }
   @media (max-width: 37.5em) {
@@ -171,9 +166,8 @@ body {
 .section-footer {
   position: relative;
   background-color: #999999;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   height: 7rem;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center; }
 
 .navigation {
@@ -283,13 +277,13 @@ body {
   width: 95%;
   backface-visibility: hidden;
   border-radius: 0;
-  padding: 2rem 3rem 6rem 3rem;
-  transition: all .2s;
+  padding: 2rem 3rem;
+  transition: all 0.2s;
   text-align: left;
   z-index: 20; }
   .about-box:hover {
     transform: translateY(-0.5rem) scale(1.01);
-    outline: .2px solid #e9ff00;
+    outline: 0.2px solid #e9ff00;
     outline-offset: 2rem;
     background-color: rgba(41, 41, 41, 0.6); }
   .about-box-img__2 {
@@ -299,7 +293,7 @@ body {
     border-radius: 50%;
     opacity: 0;
     width: 15rem;
-    border: .5px solid #e9ff00; }
+    border: 0.5px solid #e9ff00; }
     @media (max-width: 37.5em) {
       .about-box-img__2 {
         display: none; } }
@@ -315,25 +309,18 @@ body {
   backface-visibility: hidden;
   border-radius: 0;
   padding: 2rem 3rem 6rem 3rem;
-  transition: all .2s;
+  transition: all 0.2s;
   text-align: left;
   z-index: 20; }
   .experience-box:hover {
     transform: translateY(-0.5rem) scale(1.005);
-    outline: .2px solid #e9ff00;
-    outline-offset: .2rem;
+    outline: 0.2px solid #e9ff00;
+    outline-offset: 0.2rem;
     background-color: rgba(41, 41, 41, 0.6); }
   @media (max-width: 37.5em) {
     .experience-box {
       margin: 0 auto 8rem auto;
       width: 95%; } }
-  .experience-box-icon {
-    width: 7rem;
-    float: left;
-    transition: all .05s;
-    backface-visibility: hidden; }
-    .experience-box-icon:hover {
-      transform: scale(1.1); }
   .experience-box__text {
     font-size: 1.75rem;
     color: rgba(240, 230, 230, 0.904);
@@ -350,13 +337,19 @@ body {
     z-index: 20; }
     .experience-box-alt__list {
       list-style: none; }
+    .experience-box-alt__icon {
+      width: 6rem;
+      float: left;
+      transition: all 0.05s; }
+      .experience-box-alt__icon:hover {
+        transform: scale(1.05); }
     .experience-box-alt__item:not(:last-child) {
       margin-bottom: 6rem; }
     .experience-box-alt__item a {
       text-decoration: none;
       color: rgba(240, 230, 230, 0.904); }
       .experience-box-alt__item a:hover {
-        text-decoration: underline; }
+        text-decoration: none; }
     .experience-box-alt__link {
       margin: 0 auto;
       text-align: center; }
