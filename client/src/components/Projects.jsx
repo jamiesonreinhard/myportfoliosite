@@ -6,24 +6,18 @@ export default class Projects extends Component {
   
   render() {
 
-    var myProjects = {
+    const myProjects = {
       portfolio: {
         imgName: 'jamo-project',
         alt: 'jamoproject',
         url: 'https://jmr-portfolio-site.herokuapp.com/',
         caption: 'My Portfolio'
       },
-      mindUnravelled: {
-        imgName: 'mindd-unravelled',
-        alt: 'mindunravelled',
-        url: 'https://jmr-portfolio-site.herokuapp.com/',
-        caption: 'A Mind Unravelled',
-      },
-      hhsFantasy: {
-        imgName: 'FFL_site',
-        alt: 'FFL',
-        url: 'https://jmr-portfolio-site.herokuapp.com/',
-        caption: 'HHS Fantasy'
+      mySuper: {
+        imgName: 'my-super',
+        alt: 'mySuper',
+        url: 'https://my-super.herokuapp.com/',
+        caption: 'MYSUPER',
       }
     }
     

@@ -315,7 +315,7 @@ body {
   .experience-box:hover {
     transform: translateY(-0.5rem) scale(1.005);
     outline: 0.2px solid #e9ff00;
-    outline-offset: 0.2rem;
+    outline-offset: 2rem;
     background-color: rgba(41, 41, 41, 0.6); }
   @media (max-width: 37.5em) {
     .experience-box {
