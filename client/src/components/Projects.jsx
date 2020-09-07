@@ -18,6 +18,12 @@ export default class Projects extends Component {
         alt: 'mySuper',
         url: 'https://my-super.herokuapp.com/',
         caption: 'MYSUPER',
+      },
+      openRadix: {
+        imgName: 'openradix',
+        alt: 'openradix',
+        url: 'openradix.io',
+        caption: 'open_radix'
       }
     }
     
