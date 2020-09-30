@@ -22,7 +22,7 @@ export default class Projects extends Component {
       openRadix: {
         imgName: 'openradix',
         alt: 'openradix',
-        url: 'openradix.io',
+        url: 'http://www.openradix.io',
         caption: 'open_radix'
       }
     }
