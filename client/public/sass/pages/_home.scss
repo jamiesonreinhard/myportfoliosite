@@ -69,13 +69,13 @@
 .section-resume {
   background-color: #000000;
   // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  padding: 0rem 0 3rem 0;
+  padding: 5rem 0 3rem 0;
   position: relative;
   z-index: 1.7;
 
   &__heading {
     position: absolute;
-    top: -10rem;
+    top: 0rem;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.7;
