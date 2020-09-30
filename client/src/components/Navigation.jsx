@@ -43,8 +43,8 @@ export default class Navigation extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about" onClick={addActive}>
-                  About
+                <a className="nav-link" href="#projects" onClick={addActive}>
+                  Projects
                 </a>
               </li>
               <li className="nav-item">
@@ -53,8 +53,8 @@ export default class Navigation extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects" onClick={addActive}>
-                  Projects
+                <a className="nav-link" href="#about" onClick={addActive}>
+                  About
                 </a>
               </li>
               <li className="nav-item">

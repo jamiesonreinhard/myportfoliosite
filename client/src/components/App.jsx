@@ -22,9 +22,9 @@ function App() {
       <Scroll />
       <Navigation />
       <Home />
-      <About />
-      <Resume />
       <Projects />
+      <Resume />
+      <About />
       <Contact />
       <Footer />
     
