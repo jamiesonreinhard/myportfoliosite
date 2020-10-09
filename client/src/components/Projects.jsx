@@ -24,6 +24,12 @@ export default class Projects extends Component {
         alt: 'openradix',
         url: 'http://www.openradix.io',
         caption: 'open_radix'
+      },
+      socialFantasyFootball: {
+        imgName: 'social-fantasy-football',
+        alt: 'social-fantasy-football',
+        url: 'https://social-fantasy-football.herokuapp.com/',
+        caption: 'Social Fantasy Football'
       }
     }
     
@@ -38,7 +44,7 @@ export default class Projects extends Component {
             <div className="row u-margin-bottom-medium">
               {Object.keys(myProjects).map(key => {
                 const project = myProjects[key]
-                return <div className="col-lg-4 col-md-6">
+                return <div className="col-lg-3 col-md-6">
             <div className="project-circle">
                 <img className="project-circle__image" alt={project.alt} src={'./images/' + project.imgName + '.png'}></img>
                 <div className="project-circle__caption">
