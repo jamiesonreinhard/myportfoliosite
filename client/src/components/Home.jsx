@@ -5,15 +5,22 @@ export default class Home extends Component {
   render() {
     return (
       <div className="section-hero">
-        <img
-          alt="hero" 
-          className="section-hero__img"
-          src="./images/piney-cutout.png"
-        ></img>
+        
+        
         
         <div className="section-hero__text-box">
-          <h1 className="heading-primary">Hi, I'm Jamieson</h1>
-          <h2 className="heading-primary__sub mb-4">I code in...</h2>
+        <div>
+        <div>
+        <h1 className="heading-primary mr-5">Hi, I'm Jamieson</h1>
+        
+        </div>
+        <div className="flex-heading">
+        <img src="images/piney-cutout1.png" className="avatar"></img>
+        <h2 className="heading-primary__sub mb-4">I code in...</h2>
+        </div>
+        
+        </div>
+         
           <img
             alt="js" 
             className="js-icon icon"

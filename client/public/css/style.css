@@ -67,6 +67,10 @@ body {
   position: relative;
   background-color: #000000;
   z-index: 1.5; }
+  .section-hero__image {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%; }
   .section-hero__text-box {
     position: absolute;
     top: 50%;
@@ -74,13 +78,6 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 20; }
-  .section-hero__img {
-    opacity: 0.35;
-    position: absolute;
-    bottom: 0;
-    left: -2rem;
-    height: 110%;
-    overflow: hidden; }
   @media (max-width: 75em) {
     .section-hero__img {
       height: 90rem; } }
@@ -485,3 +482,14 @@ body {
 
 input[type="text"], textarea[type="text"] {
   background-color: rgba(240, 230, 230, 0.904); }
+
+.flex-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover; }
